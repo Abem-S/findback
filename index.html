@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FindBack is a centralized lost and found platform for Addis Ababa with structured reporting, match suggestions, and private ownership verification.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <title>FindBack &mdash; Addis Ababa Lost &amp; Found</title>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="brand">FindBack</a>
+    <p class="tagline">Addis Ababa Lost and Found</p>
+
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/browse.html">Browse Items</a>
+      <a href="pages/report-lost.html">Report Lost</a>
+      <a href="pages/report-found.html">Report Found</a>
+      <a href="pages/matches.html">Matches</a>
+      <a href="pages/login.html" class="btn btn-secondary">Log In</a>
+      <a href="pages/register.html" class="btn">Sign Up</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Lost something in Addis Ababa? Recover it safely.</h1>
+      <p>Submit structured lost or found reports, view match suggestions, and verify ownership privately.</p>
+
+      <form id="search-form" action="pages/browse.html" method="get">
+        <label for="query">Search item:</label>
+        <input type="text" id="query" name="q" placeholder="e.g. Black laptop bag, student ID, keys">
+
+        <label for="area">Area:</label>
+        <select id="area" name="area">
+          <option value="">All Areas</option>
+          <option value="piassa">Piassa</option>
+          <option value="bole">Bole</option>
+          <option value="megenagna">Megenagna</option>
+          <option value="arat-kilo">Arat Kilo</option>
+          <option value="mercato">Mercato</option>
+          <option value="mexico">Mexico</option>
+          <option value="kazanchis">Kazanchis</option>
+          <option value="aastu-kality">AASTU / Kality</option>
+        </select>
+
+        <button type="submit" class="btn">Search</button>
+      </form>
+
+      <div class="actions">
+        <a href="pages/report-lost.html" class="btn btn-lost">Report Lost Item</a>
+        <a href="pages/report-found.html" class="btn btn-secondary">Report Found Item</a>
+      </div>
+    </section>
+
+    <aside id="match-preview">
+      <h2>Sample Match Preview</h2>
+
+      <div class="card">
+        <span class="badge lost">Lost</span>
+        <h3>Black laptop bag</h3>
+        <p>Piassa &middot; <time datetime="2026-10-12">12 Oct 2026</time></p>
+      </div>
+
+      <p class="match-score">
+        <label for="match-score">Match score: 0.78 (threshold 0.60)</label>
+        <meter id="match-score" value="0.78" min="0" max="1">78%</meter>
+      </p>
+
+      <div class="card">
+        <span class="badge found">Found</span>
+        <h3>Black bag with laptop charger</h3>
+        <p>Piassa &middot; <time datetime="2026-10-12">12 Oct 2026</time></p>
+        <p class="note">Private identifying detail hidden until verified.</p>
+      </div>
+    </aside>
+
+    <section id="categories">
+      <h2>Browse by Category</h2>
+      <ul>
+        <li><a href="pages/browse.html?category=electronics">Phones &amp; Electronics</a></li>
+        <li><a href="pages/browse.html?category=bags">Bags &amp; Backpacks</a></li>
+        <li><a href="pages/browse.html?category=ids">IDs &amp; Documents</a></li>
+        <li><a href="pages/browse.html?category=wallets">Wallets &amp; Purses</a></li>
+        <li><a href="pages/browse.html?category=keys">Keys</a></li>
+        <li><a href="pages/browse.html?category=other">Other Items</a></li>
+      </ul>
+    </section>
+
+    <section id="recent">
+      <h2>Recent Reports</h2>
+      <p>Sample preview listings across Addis Ababa. <a href="pages/browse.html">Browse all reports</a></p>
+
+      <div class="cards">
+        <article class="card">
+          <span class="badge lost">Lost</span>
+          <span class="status match">Potential Match Found</span>
+          <h3><a href="pages/item-detail.html">Black HP Laptop Bag</a></h3>
+          <p>Piassa &mdash; Near minibus stop</p>
+          <p><time datetime="2026-10-12">12 Oct 2026</time></p>
+        </article>
+
+        <article class="card">
+          <div class="photo blurred">Sensitive Photo &mdash; Blurred for Privacy</div>
+          <span class="badge found">Found</span>
+          <span class="status active">Active</span>
+          <h3><a href="pages/item-detail.html"><abbr title="Addis Ababa Science and Technology University">AASTU</abbr> Student ID Card</a></h3>
+          <p><abbr title="Addis Ababa Science and Technology University">AASTU</abbr> / Kality &mdash; Main library entrance</p>
+          <p>Held at: <abbr title="Addis Ababa Science and Technology University">AASTU</abbr> Main Gate Security Office</p>
+          <p><time datetime="2026-11-19">19 Nov 2026</time></p>
+        </article>
+
+        <article class="card">
+          <span class="badge lost">Lost</span>
+          <span class="status active">Active</span>
+          <h3><a href="pages/item-detail.html">Samsung Galaxy A54 (Dark Navy)</a></h3>
+          <p>Bole &mdash; Edna Mall area</p>
+          <p><time datetime="2026-11-18">18 Nov 2026</time></p>
+        </article>
+
+        <article class="card">
+          <div class="photo blurred">Sensitive Photo &mdash; Blurred for Privacy</div>
+          <span class="badge found">Found</span>
+          <span class="status verifying">Verification in Progress</span>
+          <h3><a href="pages/item-detail.html">Brown Leather Wallet</a></h3>
+          <p>Megenagna &mdash; Light rail bridge</p>
+          <p>Handover: Megenagna Terminal Desk</p>
+          <p><time datetime="2026-11-17">17 Nov 2026</time></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="how-it-works">
+      <h2>How FindBack Works</h2>
+      <ol>
+        <li><strong>Submit a report:</strong> Enter item category, Addis Ababa area, landmark, date, and an optional hidden detail.</li>
+        <li><strong>Review match suggestions:</strong> FindBack pairs lost and found reports scoring 0.60 or higher.</li>
+        <li><strong>Verify ownership privately:</strong> Claimants describe the hidden detail, and sensitive ID photos stay blurred.</li>
+        <li><strong>Arrange safe handover:</strong> Chat inside FindBack with no phone numbers shared, then close the report.</li>
+      </ol>
+
+      <h3>Report Status Lifecycle</h3>
+      <ol class="lifecycle">
+        <li class="status active">Active</li>
+        <li class="status match">Potential Match Found</li>
+        <li class="status verifying">Verification in Progress</li>
+        <li class="status recovered">Recovered</li>
+        <li class="status closed">Closed</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="footer-nav">
+      <a href="pages/browse.html">Browse Reports</a>
+      <a href="pages/report-lost.html">Report Lost</a>
+      <a href="pages/report-found.html">Report Found</a>
+      <a href="pages/matches.html">Matches</a>
+      <a href="pages/dashboard.html">Dashboard</a>
+      <a href="pages/profile.html">Profile</a>
+      <a href="pages/admin.html">Admin</a>
+    </nav>
+    <p>&copy; <time datetime="2026">2026</time> FindBack &mdash; Addis Ababa Lost and Found</p>
+  </footer>
+</body>
+</html>
