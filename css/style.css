@@ -1,0 +1,320 @@
+/* FindBack shared stylesheet */
+
+/* Palette: Primary #0f5c4d, Dark #1e293b, Accent hsl(18, 67%, 47%), Light #f7f5f0 */
+
+/* Base */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #f7f5f0;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section,
+aside {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid #e2ddd3;
+    border-radius: 6px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 0.75rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #0f5c4d;
+}
+
+h2 {
+    font-size: 1.45rem;
+    color: rgb(15, 92, 77);
+}
+
+h3 {
+    font-size: 1.15rem;
+    color: #1e293b;
+}
+
+p {
+    margin: 0 0 0.75rem;
+}
+
+abbr[title] {
+    cursor: help;
+    text-decoration: underline dotted;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #0f5c4d;
+}
+
+a:visited {
+    color: #0b463b;
+}
+
+a:hover {
+    color: hsl(18, 67%, 47%);
+    text-decoration: underline;
+}
+
+a:active {
+    color: #9a3412;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 1.75rem 1rem;
+    background-image: linear-gradient(135deg, #0f5c4d, #093b31);
+    color: white;
+}
+
+header .brand:link,
+header .brand:visited {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+}
+
+header .brand:hover {
+    color: #fef3c7;
+    text-decoration: none;
+}
+
+header .tagline {
+    margin: 0.25rem 0 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+}
+
+header nav a:link,
+header nav a:visited {
+    display: inline-block;
+    padding: 0.45rem 0.85rem;
+    margin: 0.25rem;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+header nav a:hover,
+header nav a.active {
+    background-color: rgba(255, 255, 255, 0.18);
+    text-decoration: none;
+}
+
+/* Buttons */
+.btn:link,
+.btn:visited,
+.btn {
+    display: inline-block;
+    padding: 0.55rem 1.1rem;
+    margin: 0.25rem 0.25rem 0 0;
+    background-color: #0f5c4d;
+    color: white;
+    border: 1px solid #0f5c4d;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #093b31;
+    border-color: #093b31;
+    text-decoration: none;
+}
+
+.btn-secondary:link,
+.btn-secondary:visited,
+.btn-secondary {
+    background-color: #475569;
+    border-color: #475569;
+}
+
+.btn-secondary:hover {
+    background-color: #334155;
+    border-color: #334155;
+}
+
+.btn-lost:link,
+.btn-lost:visited,
+.btn-lost,
+header nav .btn:link,
+header nav .btn:visited {
+    background-color: hsl(18, 67%, 47%);
+    border-color: hsl(18, 67%, 47%);
+}
+
+.btn-lost:hover,
+header nav .btn:hover {
+    background-color: hsl(18, 67%, 40%);
+    border-color: hsl(18, 67%, 40%);
+}
+
+header nav .btn-secondary:link,
+header nav .btn-secondary:visited {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.75);
+}
+
+header nav .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Cards and Badges */
+.card {
+    background-color: #fcfbf8;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    border: 1px solid #e2ddd3;
+    border-left: 4px solid #0f5c4d;
+    border-radius: 6px;
+}
+
+.card:hover {
+    background-color: #f4f9f8;
+}
+
+.card > p {
+    color: #475569;
+}
+
+.badge,
+.status {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    margin: 0 0.35rem 0.5rem 0;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.badge.lost {
+    background-color: #fde8df;
+    color: #9a3412;
+}
+
+.badge.found {
+    background-color: #d9f2ec;
+    color: #0f5c4d;
+}
+
+.status.active {
+    background-color: #e0f2fe;
+    color: #075985;
+}
+
+.status.match {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.status.verifying {
+    background-color: #ede9fe;
+    color: #5b21b6;
+}
+
+.status.recovered {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.status.closed {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+.photo.blurred {
+    padding: 1.1rem;
+    margin: 0 0 0.75rem;
+    background-image: linear-gradient(135deg, #cbd5e1, #e2e8f0);
+    border: 2px dotted #94a3b8;
+    border-radius: 4px;
+    text-align: center;
+    color: #334155;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.85;
+}
+
+/* Forms */
+label {
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    padding: 0.5rem 0.65rem;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: white;
+    color: #1e293b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.75rem 1rem;
+    margin-top: 2.5rem;
+    background-color: #1e293b;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-nav a:link,
+.footer-nav a:visited {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+}
+
+.footer-nav a:hover {
+    color: hsl(18, 67%, 65%);
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0.75rem 0 0;
+    font-size: 0.88rem;
+}

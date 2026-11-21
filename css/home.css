@@ -1,0 +1,130 @@
+/* FindBack home page stylesheet */
+
+/* Hero */
+#hero {
+    border-left: 5px solid #0f5c4d;
+    background-image: linear-gradient(180deg, white, #f3f8f7);
+}
+
+#search-form {
+    margin: 1.25rem 0;
+    padding: 1rem;
+    background-color: #f7f5f0;
+    border: 1px solid #e2ddd3;
+    border-radius: 6px;
+}
+
+#search-form label {
+    display: inline-block;
+    margin: 0.25rem 0.35rem 0.25rem 0;
+}
+
+#search-form input[type="text"],
+#search-form select {
+    margin: 0.25rem 0.6rem 0.25rem 0;
+}
+
+#search-form input[type="text"] {
+    width: 260px;
+    max-width: 100%;
+}
+
+.actions {
+    margin-top: 0.75rem;
+}
+
+/* Match Preview */
+#match-preview {
+    border-left: 5px solid hsl(18, 67%, 47%);
+    background-image: radial-gradient(circle at top left, #fef4e8, white 70%);
+}
+
+#match-preview .card {
+    background-color: white;
+}
+
+#match-preview .card h3 {
+    margin: 0 0 0.3rem;
+}
+
+.match-score {
+    margin: 0.75rem 0;
+    font-weight: 600;
+    color: #92400e;
+}
+
+.match-score meter {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: 1.1rem;
+    margin: 0.35rem 0 0;
+}
+
+.note {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #475569;
+    margin: 0.35rem 0 0;
+}
+
+/* Categories */
+#categories ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#categories li {
+    display: inline-block;
+    margin: 0.25rem 0.35rem 0.25rem 0;
+}
+
+#categories a:link,
+#categories a:visited {
+    display: inline-block;
+    padding: 0.45rem 0.9rem;
+    background-color: #f7f5f0;
+    color: #0f5c4d;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
+#categories a:hover {
+    background-color: #0f5c4d;
+    color: white;
+    border-color: #0f5c4d;
+    text-decoration: none;
+}
+
+/* Recent Reports */
+#recent .card h3 {
+    margin: 0 0 0.4rem;
+}
+
+#recent .card p {
+    margin: 0 0 0.35rem;
+}
+
+/* How It Works */
+#how-it-works ol {
+    padding: 0 0 0 1.25rem;
+    margin: 0 0 1.25rem;
+}
+
+#how-it-works li {
+    margin: 0 0 0.5rem;
+}
+
+#how-it-works .lifecycle {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#how-it-works .lifecycle li {
+    display: inline-block;
+    margin: 0.25rem 0.35rem 0.25rem 0;
+}
